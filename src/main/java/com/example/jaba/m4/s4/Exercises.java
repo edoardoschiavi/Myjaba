@@ -12,6 +12,7 @@ public class Exercises {
     public static void main(String[] args) {
         int a = 42;
         int b = 7;
+        int res = 0;
 
         char op = '+';
 
@@ -20,7 +21,22 @@ public class Exercises {
         }
 
         // TODO: switch on op for '+', '-', '/', '*' to operate on a and b
-        System.out.println("The [sum/subtraction/division/product] of a and b is ... ");
+        // DONE!
+        switch(op) {
+        case '+':
+        	res = a + b;
+        	break;
+        case '-':
+        	res = a - b;
+        	break;
+        case '*':
+        	res = a * b;
+        	break;
+        case '/':
+        	res = a / b;
+        	break;
+        }
+        System.out.println("The [sum/subtraction/division/product] of a and b is:  " +  res);
 
         // TODO: same, but use an enum for the operation instead of a char
 
