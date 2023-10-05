@@ -22,7 +22,11 @@ public class Memory {
         // primitive, on the stack
         int x = 12;
         System.out.println(x);
-
+        
+        //modify Edo
+        Animals[] animals = Animals.values();
+        System.out.println(Arrays.toString(animals));
+        
         // reference, the object is on the heap, it contains primitive values
         int values[] = { 7, x };
         System.out.println(Arrays.toString(values));
