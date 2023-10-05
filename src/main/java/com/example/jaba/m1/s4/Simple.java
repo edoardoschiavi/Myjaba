@@ -23,6 +23,8 @@ public class Simple {
         // if the caller passes exactly one parameter, output it
         if (args.length == 1) {
             System.out.println(args[0]);
+        } else if (args.length == 2) {
+        	System.out.println(args[0] + " , " + args[1]);
         } else {
             // otherwise output something generic
             System.out.println("stranger");
